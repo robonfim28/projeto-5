@@ -1,0 +1,114 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #263445;
+    padding: 40px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #245b91;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+/* Campos de texto */
+input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #b8c9d9;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #2878c7;
+    box-shadow: 0 0 5px #2878c7;
+}
+
+/* Botão */
+button {
+    padding: 12px 22px;
+    background: #2878c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #18558f;
+    transform: scale(1.05);
+}
+
+/* Tabela */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background: #2878c7;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Células */
+td {
+    padding: 13px;
+    text-align: center;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+/* Efeito ao passar o mouse */
+tbody tr:hover {
+    background: #eaf3fc;
+}
+
+/* Responsividade */
+@media (max-width: 650px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input, button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
